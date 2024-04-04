@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all 0.5s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('rutu1.jpg') no-repeat center center;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* Styles for .main */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+/* Styles for .headings */
+.headings {
+    font-family: cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+
+/* Styles for .btn */
+.btn {
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: 0.6s ease;
+    font-weight: bold;
+    border-radius: 8px;
+    font-family: cursive;
+}
+
+.dr{
+    margin-right: 250px;
+}
+
+.hm{
+    margin-right: -200px;
+    margin-top: -34px;
+}
+.sp{
+    color: orange;
+}
+.co{
+    color: orange;
+}
+
+/* Hover styles for .btn */
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+}
+
+
+
+#about {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 50px;
+   
+}
+
+.mn{
+    margin-left: 380px;
+    font-family: cursive;
+}
+
+.inf{
+margin-left: 100px;
+text-align: center;
+font-family: cursive;
+}
+
+/* Styles for #pic */
+#pic {
+    display: flex;
+}
+
+/* Styles for #pic img */
+#pic img {
+    width: 440px;
+    height: 400px;
+}
+
+
+
+
+/* Styles for #portfolio */
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Styles for .gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+/* Styles for .gallery img */
+.gallery img {
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+
+
+
+
+/* Styles for #contact */
+#contact {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+}
+
+/* Styles for .form */
+.form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+/* Styles for .input */
+.input {
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+}
+
+
+
+
+/* Styles for #msg */
+#msg {
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+
+/* Styles for #send */
+#send {
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+
+/* Hover styles for #send */
+#send:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+
+
+@media(max-width:1024px){
+    #pic{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #intro h2{
+        color: brown;
+    }
+    #intro p{
+
+        margin-left: 25px;
+            }
+}
+
+
+@media (max-width:850px){
+    #pic{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #intro h2{
+       
+        margin-left: 270px;
+    }
+
+    #intro p{
+
+margin-left: 25px;
+    }
+}
+
+
+@media (max-width: 740px) {
+    #pic {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #intro h2 {
+        margin-left: 100px; /* Adjust the margin as needed */
+    }
+
+    #intro p {
+        margin-left: 25px;
+    }
+}
+
+
+
+@media (max-width: 640px) {
+    #pic {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #intro h2 {
+        margin-left: 10px; /* Adjust the margin value as needed */
+    }
+
+    #intro p {
+        margin-left: 25px;
+    }
+}
+
+
+@media (max-width: 540px) {
+    #pic {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #intro h2 {
+        margin-left: 40%; /* Adjust the margin value as needed */
+    }
+
+    #intro p {
+        margin-left: 10px; /* Adjust the margin value as needed */
+    }
+}
+
+@media (max-width: 460px) {
+    #pic {
+        flex-direction: column;
+        align-items: center;
+        /* Other styles specific for #pic at 460px width */
+    }
+
+    #intro h2 {
+        margin-left: 40%; /* Adjusted margin for #intro h2 at 460px width */
+        /* Other styles specific for #intro h2 at 460px width */
+    }
+
+    #intro p {
+        text-align: center; /* Adjusted margin for #intro p at 460px width */
+        /* Other styles specific for #intro p at 460px width */
+    }
+}
+
+
+/* Existing media queries */
+
+/* Media query for 360px */
+@media (max-width: 360px) {
+    #pic {
+        /* Any specific styles for #pic at 360px width */
+        /* For example: */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #intro h2 {
+        /* Adjust the margin for #intro h2 at 360px width */
+        /* Add your specific margin-left value for 360px width */
+        margin-left: 40%; /* Adjust as needed */
+    }
+
+    #intro p {
+        /* Adjust the margin for #intro p at 360px width */
+        /* Add your specific margin-left value for 360px width */
+        margin-left: 15px; /* Adjust as needed */
+    }
+}
+
+
+
+
